@@ -7,12 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.Reader;
 import java.util.concurrent.TimeUnit;
 
 public class CalculatorPage {
     WebDriver driver;
     By Result = By.cssSelector("div.dcg-exp-output-container .dcg-mq-root-block");
+
     public CalculatorPage()
     {
         this.driver = DriverManager.getDriver();

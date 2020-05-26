@@ -56,11 +56,11 @@ public class DriverManager {
                 driver = new InternetExplorerDriver();
                 break;
             case CHROME:
-                System.setProperty("webdriver.chrome.driver", "/Users/khanhtran/Downloads/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
                 driver = new ChromeDriver();
                 break;
             default:
-                System.setProperty("webdriver.gecko.driver", "/Users/khanhtran/Downloads/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver");
                 driver = new FirefoxDriver();
                 break;
         }
